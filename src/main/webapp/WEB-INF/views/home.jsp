@@ -9,7 +9,7 @@
 	Spring MongoDB Integration Example!  
 </h1>
 
-<P>  The following movies are there in the repository. </P>
+<P>  Fews movies are added to the repository successfully. </P>
 
 </body>
 </html>
