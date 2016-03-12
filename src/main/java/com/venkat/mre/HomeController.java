@@ -24,8 +24,8 @@ public class HomeController {
 	@Autowired
 	MongoTemplate mongoTemplate;
 	
-	@Autowired
-	MovieRepository movieRepository;
+/*	@Autowired
+	MovieRepository movieRepository;*/
 	
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
@@ -51,12 +51,12 @@ public class HomeController {
 		
 		//Accessing MongoDB using MovieRepositories
 		Movie movie2 = new Movie(526, "Facing the Giants", "Sport");
-		if(movieRepository==null){
+		if(mongoOperation==null){
 			logger.info("movieRepository is null");
 		}else{
 			logger.info("movieRepository is not null");
 			
-			movieRepository.save(movie2);
+			mongoOperation.save(movie2);
 			
 			logger.info(movie2 + "Movie Details successfully saved");
 		}		
